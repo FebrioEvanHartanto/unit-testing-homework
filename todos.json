@@ -1,0 +1,16 @@
+[
+  {
+    "name" : "Eat Breakfast",
+    "status" : "Completed"
+  },
+
+  {
+    "name" : "Study programming",
+    "status" : "Not completed"
+  },
+
+  {
+    "name" : "Go to the gym",
+    "status" : "Not completed"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "unit-testing-development-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --runInBand --forceExit --coverage --verbose --watchAll",
+    "dev": "nodemon ./bin/listen.js",
+    "docker": "NODE_ENV=docker && node ./bin/listen.js",
+    "docker-test": "NODE_ENV=test  && npx sequelize-cli db:migrate --env test && jest --detectOpenHandles --runInBand --forceExit --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "pg": "^8.11.3",
+    "sequelize": "^6.37.1",
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^6.3.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
